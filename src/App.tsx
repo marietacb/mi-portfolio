@@ -142,7 +142,7 @@ const skills = {
   "Herramientas": ["Git", "Vite", "Composer", "Vercel", "XAMPP"]
 };
 
-function ScreenshotCard({ shot, color, idx }: { shot: { title: string; desc: string; color: string }; color: string; idx: number }) {
+function ScreenshotCard({ shot, color }: { shot: { title: string; desc: string; color: string }; color: string }) {
   return (
     <div className="rounded-xl overflow-hidden border border-gray-200 bg-white shadow-sm hover:shadow-md transition-shadow">
       <div className="relative" style={{ backgroundColor: shot.color, minHeight: 160 }}>
@@ -177,7 +177,7 @@ function GallerySection({ project }: { project: typeof projects[0] }) {
       </div>
       <div className="grid grid-cols-2 gap-3">
         {visible.map((s, i) => (
-          <ScreenshotCard key={i} shot={s} color={project.color} idx={i} />
+          <ScreenshotCard key={i} shot={s} color={project.color} />
         ))}
       </div>
       {project.screenshots.length > 4 && (
@@ -192,7 +192,7 @@ function GallerySection({ project }: { project: typeof projects[0] }) {
   );
 }
 
-function ProjectCard({ project, onClick, idx }: { project: typeof projects[0]; onClick: () => void; idx: number }) {
+function ProjectCard({ project, onClick }: { project: typeof projects[0]; onClick: () => void }) {
   return (
     <div onClick={onClick} className="cursor-pointer group">
       <div className="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
@@ -325,7 +325,7 @@ function ProjectDetail({ project, onClose }: { project: typeof projects[0]; onCl
 }
 
 export default function Portfolio() {
-  const [selected, setSelected] = useState(null);
+  const [selected, setSelected] = useState<typeof projects[0] | null>(null);
   const [section, setSection] = useState("projects");
 
   useEffect(() => {
