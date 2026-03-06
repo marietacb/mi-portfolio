@@ -360,7 +360,7 @@ export default function Portfolio() {
             <div className="mb-12">
               <h2 className="text-4xl font-bold text-gray-900 mb-3">Mis Proyectos</h2>
               <p className="text-lg text-gray-500 max-w-2xl">
-                Desarrollo web full stack — desde aplicaciones personales hasta plataformas en producción real para empresas de ingeniería civil.
+                Desarrollo web full stack — desde aplicaciones personales hasta plataformas en producción real para empresas de ingeniería civil. (Faltan las capturas de pantalla de las aplicaciones)
               </p>
               <div className="flex gap-6 mt-6">
                 {[["3", "Proyectos"], ["1", "En producción"], ["15+", "Tecnologías"], ["30+", "Pantallas"]].map(([n, l]) => (
@@ -386,7 +386,7 @@ export default function Portfolio() {
                 {[
                   { color: "#E63946", title: "Love Analytics", desc: "Primera SPA con React 19, TypeScript, y Firebase. Aprendizaje de arquitectura moderna de componentes, tipado estático y BaaS.", tech: "React · TypeScript · Firebase · Vite" },
                   { color: "#2563EB", title: "Gestión de Inclinómetros", desc: "Salto a backend con PHP y PostgreSQL. Diseño de API REST, modelo relacional robusto, visualización científica 3D y control de roles.", tech: "PHP · PostgreSQL · Plotly.js · Leaflet" },
-                  { color: "#0F766E", title: "Constru-Care", desc: "Plataforma en producción real. Generación de informes (PDF/Excel), internacionalización, configuración dinámica por proyecto y gestión de alarmas.", tech: "PHP · PostgreSQL · Chart.js · FPDF · PhpSpreadsheet" }
+                  { color: "#0F766E", title: "Monitorización de estructuras", desc: "Plataforma en producción real. Generación de informes (PDF/Excel), internacionalización, configuración dinámica por proyecto y gestión de alarmas.", tech: "PHP · PostgreSQL · Chart.js · FPDF · PhpSpreadsheet" }
                 ].map((item, i) => (
                   <div key={i} className="relative pl-12 pb-8">
                     <div className="absolute left-2.5 w-3.5 h-3.5 rounded-full border-2 bg-white" style={{ borderColor: item.color }} />
