@@ -91,7 +91,7 @@ const projects = [
   },
   {
     id: 3,
-    title: "Constru-Care",
+    title: "Monitorización de Sensores",
     subtitle: "Monitorización de sensores en obras",
     category: "Full Stack · Producción Real",
     color: "#0F766E",
