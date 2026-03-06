@@ -381,7 +381,7 @@ export default function Portfolio() {
                 Desarrollo web full stack — desde aplicaciones personales hasta plataformas en producción real para empresas de ingeniería civil.
               </p>
               <div className="flex gap-6 mt-6">
-                {[["3", "Proyectos"], ["1", "En producción"], ["15+", "Tecnologías"], ["37", "Pantallas"]].map(([n, l]) => (
+                {[["3", "Proyectos"], ["3", "En producción"], ["15+", "Tecnologías"], ["37", "Pantallas"]].map(([n, l]) => (
                   <div key={l} className="text-center">
                     <p className="text-3xl font-bold text-gray-900">{n}</p>
                     <p className="text-xs text-gray-400">{l}</p>
