@@ -32,15 +32,16 @@ const projects = [
       { label: "Deploy", value: "Vercel" }
     ],
     screenshots: [
-      { title: "Dashboard — Inicio", desc: "Panel principal con contador de tiempo juntos, estadísticas (citas totales, km de viaje, cine), gráfico de frecuencia, cuenta atrás del próximo aniversario y récord de la pareja.", color: "#FEE2E2" },
-      { title: "Dashboard — Vista completa", desc: "Vista expandida del dashboard con el gráfico de barras mensual de frecuencia de citas y todos los widgets de estadísticas.", color: "#FECDD3" },
-      { title: "Nuestras Citas", desc: "Galería de tarjetas con todas las citas registradas: viajes, comidas, cine. Cada tarjeta muestra foto, categoría, fecha, ubicación y descripción. Filtros por categoría y buscador.", color: "#FEE2E2" },
-      { title: "Nuestra Cartelera", desc: "Sección de películas vistas juntos con carátulas, lugar, y sistema de puntuación dual (María y Guillem con estrellas independientes).", color: "#FECDD3" },
-      { title: "Nuestro Pasaporte", desc: "Pasaporte digital de la pareja con datos personalizados, visados de países visitados (Francia), contador de países y meses de aventura.", color: "#FEE2E2" },
-      { title: "Pasaporte — Detalle País", desc: "Vista detallada de un país visitado (Francia) con resumen de ciudades, años, lugares visitados y mapa con marcador de nota.", color: "#FECDD3" },
-      { title: "Lista de Deseos", desc: "Bucket list dividida en planes futuros (Viaje a Japón, Curso de baile) y cartelera pendiente (Gladiator 2, Wicked), con estados y eliminación.", color: "#FEE2E2" },
-      { title: "Nueva Cita — Modal", desc: "Formulario modal para añadir una nueva cita: fotos, título, fechas, lugar, categoría, km recorridos y comentario descriptivo.", color: "#FECDD3" },
-      { title: "Calendario", desc: "Vista de calendario mensual con las citas marcadas en los días correspondientes y panel lateral de detalles del día seleccionado.", color: "#FEE2E2" }
+      { title: "Dashboard — Inicio", desc: "Panel principal con contador de tiempo juntos, estadísticas, gráfico de frecuencia y cuenta atrás del próximo aniversario.", img: "/screenshots/love/dashboard-inicio.png" },
+      { title: "Dashboard — Vista completa", desc: "Vista expandida del dashboard con el gráfico de barras mensual de frecuencia de citas y todos los widgets.", img: "/screenshots/love/dashboard-completo.png" },
+      { title: "Nuestras Citas", desc: "Galería de tarjetas con todas las citas registradas. Filtros por categoría y buscador.", img: "/screenshots/love/citas.png" },
+      { title: "Nuestra Cartelera", desc: "Películas vistas juntos con carátulas y sistema de puntuación dual.", img: "/screenshots/love/cartelera.png" },
+      { title: "Nuestro Pasaporte", desc: "Pasaporte digital con visados de países visitados, contador de países y meses de aventura.", img: "/screenshots/love/pasaporte.png" },
+      { title: "Pasaporte — Detalle País", desc: "Vista detallada de un país visitado con resumen de ciudades, años y lugares visitados.", img: "/screenshots/love/pasaporte-detalle.png" },
+      { title: "Lista de Deseos", desc: "Bucket list dividida en planes futuros y cartelera pendiente, con estados y eliminación.", img: "/screenshots/love/lista-deseos.png" },
+      { title: "Nueva Cita — Modal", desc: "Formulario modal para añadir una nueva cita: fotos, título, fechas, lugar, categoría y comentario.", img: "/screenshots/love/nueva-cita.png" },
+      { title: "Nueva Cita — Detalle", desc: "Vista adicional del formulario de creación de citas con campos extendidos.", img: "/screenshots/love/nueva-cita2.png" },
+      { title: "Calendario", desc: "Vista de calendario mensual con las citas marcadas y panel lateral de detalles del día seleccionado.", img: "/screenshots/love/calendario.png" }
     ]
   },
   {
@@ -74,16 +75,18 @@ const projects = [
       { label: "Seguridad", value: "Roles + Sesiones" }
     ],
     screenshots: [
-      { title: "Login", desc: "Pantalla de inicio de sesión con autenticación por usuario y contraseña, interfaz limpia con branding de Calsens.", color: "#DBEAFE" },
-      { title: "Dashboard — Mapa general", desc: "Panel principal con mapa interactivo Leaflet mostrando la ubicación de los sensores sobre el territorio. Panel lateral con selector de inclinómetro y filtros.", color: "#BFDBFE" },
-      { title: "Selector de sensores", desc: "Dropdown organizado por ubicación (Canal / Colector) con todos los inclinómetros disponibles categorizados.", color: "#DBEAFE" },
-      { title: "Sensor seleccionado", desc: "Vista de un inclinómetro específico (IN-28) con mapa centrado, foto de referencia, datos del sensor y sliders de rango de fechas y profundidad.", color: "#BFDBFE" },
-      { title: "Historial de versiones", desc: "Modal con el histórico de versiones de un sensor (SC12_IN-10), mostrando periodos de datos y opciones de visualización.", color: "#DBEAFE" },
-      { title: "Perfiles de desplazamiento", desc: "Gráficos de perfiles Eje A y Eje B con múltiples series temporales superpuestas, profundidad (m) vs desplazamiento (mm). Leyenda con todas las fechas.", color: "#BFDBFE" },
-      { title: "Modelo 3D", desc: "Visualización tridimensional interactiva del desplazamiento del inclinómetro, renderizada con Plotly.js.", color: "#DBEAFE" },
-      { title: "Serie temporal + Polar", desc: "Gráfico de serie temporal del desplazamiento a 0.5m de profundidad (Eje A y B) y gráfico polar con umbrales y lecturas.", color: "#BFDBFE" },
-      { title: "Gestión de datos", desc: "Módulo de importación de CSV con selector de sensor/versión, limpieza de datos y historial de cargas con opción de borrado.", color: "#DBEAFE" },
-      { title: "Panel de administración", desc: "Formularios de creación de usuarios (con roles) y alta de nuevos sensores con coordenadas, nivel freático, ubicación y foto.", color: "#BFDBFE" }
+      { title: "Login", desc: "Pantalla de inicio de sesión con autenticación por usuario y contraseña.", img: "/screenshots/inclinometros/login.png" },
+      { title: "Dashboard — Mapa general", desc: "Panel principal con mapa interactivo Leaflet mostrando la ubicación de los sensores.", img: "/screenshots/inclinometros/dashboard-mapa.png" },
+      { title: "Selector de sensores", desc: "Dropdown organizado por ubicación con todos los inclinómetros categorizados.", img: "/screenshots/inclinometros/selector-sensores.png" },
+      { title: "Sensor seleccionado", desc: "Vista de un inclinómetro específico con mapa centrado, foto de referencia y sliders de filtro.", img: "/screenshots/inclinometros/sensor-seleccionado.png" },
+      { title: "Historial de versiones", desc: "Modal con el histórico de versiones de un sensor, mostrando periodos de datos.", img: "/screenshots/inclinometros/historial-versiones.png" },
+      { title: "Perfiles de desplazamiento", desc: "Gráficos de perfiles Eje A y Eje B con múltiples series temporales superpuestas.", img: "/screenshots/inclinometros/perfiles-desplazamiento.png" },
+      { title: "Modelo 3D", desc: "Visualización tridimensional interactiva del desplazamiento, renderizada con Plotly.js.", img: "/screenshots/inclinometros/modelo-3d.png" },
+      { title: "Serie temporal", desc: "Gráfico de serie temporal del desplazamiento a 0.5m de profundidad (Eje A y B).", img: "/screenshots/inclinometros/serie-temporal.png" },
+      { title: "Gráfico Polar", desc: "Gráfico polar con umbrales y lecturas de desplazamiento.", img: "/screenshots/inclinometros/polar.png" },
+      { title: "Gestión de datos", desc: "Módulo de importación de CSV con selector de sensor/versión e historial de cargas.", img: "/screenshots/inclinometros/gestion-datos.png" },
+      { title: "Gestión de datos — Detalle", desc: "Vista adicional del módulo de gestión con limpieza de datos y opciones avanzadas.", img: "/screenshots/inclinometros/gestion-datos2.png" },
+      { title: "Panel de administración", desc: "Formularios de creación de usuarios (con roles) y alta de nuevos sensores.", img: "/screenshots/inclinometros/panel-admin.png" }
     ]
   },
   {
@@ -118,19 +121,21 @@ const projects = [
       { label: "Idiomas", value: "ES, FR" }
     ],
     screenshots: [
-      { title: "Login", desc: "Pantalla de conexión con branding Calsens + Constru-Care, interfaz en francés para el cliente.", color: "#CCFBF1" },
-      { title: "Visor de obra — Plano general", desc: "Plano 2D interactivo de la Catedral de Saint-Aubain con todos los sensores posicionados. Panel lateral con lista de capteurs y leyenda de signos de desplazamiento.", color: "#99F6E4" },
-      { title: "Visor — Gráficas de sensores", desc: "Gráficas temporales embebidas sobre el plano: inclinación A/B, temperatura y humedad con series de tiempo interactivas.", color: "#CCFBF1" },
-      { title: "Dashboard — Todos los sensores", desc: "Vista semana con gráficos individuales de desplazamiento para cada sensor (CA01-CA08), filtro de fechas y selector de periodo.", color: "#99F6E4" },
-      { title: "Dashboard — Gráficas por variable", desc: "Vista agrupada: desplazamiento, inclinación A, inclinación B, temperatura y humedad — cada una con múltiples sensores superpuestos.", color: "#CCFBF1" },
-      { title: "Sensores individuales expandidos", desc: "Gráficas ampliadas por sensor individual (CA01-CA08) con detalle de desplazamiento en mm a lo largo del tiempo.", color: "#99F6E4" },
-      { title: "Generador de informes", desc: "Asistente paso a paso: selección de obra, periodo, sensores y formato de salida (PDF datos, Excel, gráficos configurables).", color: "#CCFBF1" },
-      { title: "Configurador de gráficos PDF", desc: "Modal para personalizar gráficos del informe: tipo (línea/barra), ejes, sensores y disposición. Opciones de descarga PNG y generación PDF.", color: "#99F6E4" },
-      { title: "Informe PDF generado", desc: "Ejemplo de informe de lecturas con tabla de datos (sensor, timestamp, variables) y informe gráfico con series temporales integradas.", color: "#CCFBF1" },
-      { title: "Exportación Excel", desc: "Hoja de cálculo generada con columnas: sensor_id, timestamp, temperatura, humedad, desplazamiento, inclinación A/B.", color: "#99F6E4" },
-      { title: "Mapa general de obras", desc: "Vista cartográfica con Leaflet mostrando la ubicación de todas las obras monitorizadas en España y Europa, con tema oscuro y claro.", color: "#CCFBF1" },
-      { title: "Gestión de usuarios", desc: "Módulo CRUD: agregar usuario (nombre, email, contraseña, rol) y modificar/eliminar usuarios existentes con dropdown.", color: "#99F6E4" },
-      { title: "Perfil de usuario", desc: "Vista de perfil con nombre de usuario y rol asignado. Menú con opciones de perfil y desconexión.", color: "#CCFBF1" }
+      { title: "Login", desc: "Pantalla de conexión con branding Calsens + Constru-Care, interfaz en francés.", img: "/screenshots/construcare/login.png" },
+      { title: "Visor de obra — Plano general", desc: "Plano 2D interactivo de la Catedral de Saint-Aubain con sensores posicionados y leyenda.", img: "/screenshots/construcare/visor-plano.png" },
+      { title: "Visor — Gráficas de sensores", desc: "Gráficas temporales embebidas sobre el plano: inclinación, temperatura y humedad.", img: "/screenshots/construcare/visor-graficas.png" },
+      { title: "Dashboard — Todos los sensores", desc: "Gráficos individuales de desplazamiento por sensor (CA01-CA08), filtro de fechas y periodo.", img: "/screenshots/construcare/dashboard-sensores.png" },
+      { title: "Dashboard — Gráficas por variable", desc: "Vista agrupada: desplazamiento, inclinación, temperatura y humedad con múltiples sensores.", img: "/screenshots/construcare/dashboard-variables.png" },
+      { title: "Generador de informes", desc: "Asistente paso a paso: selección de obra, periodo, sensores y formato de salida.", img: "/screenshots/construcare/generador-informes.png" },
+      { title: "Generador de informes — Opciones", desc: "Vista adicional del generador con opciones de formato PDF, Excel y gráficos.", img: "/screenshots/construcare/generador-informes2.png" },
+      { title: "Configurador de gráficos PDF", desc: "Modal para personalizar gráficos del informe: tipo, ejes, sensores y disposición.", img: "/screenshots/construcare/configurador-graficos.png" },
+      { title: "Informe PDF generado", desc: "Informe de lecturas con tabla de datos (sensor, timestamp, variables) generado desde servidor.", img: "/screenshots/construcare/informe-pdf.png" },
+      { title: "Informe gráfico PDF", desc: "Informe gráfico con series temporales integradas generado automáticamente.", img: "/screenshots/construcare/informe-pdf2.png" },
+      { title: "Exportación Excel", desc: "Hoja de cálculo con columnas: sensor_id, timestamp, temperatura, humedad, desplazamiento.", img: "/screenshots/construcare/exportacion-excel.png" },
+      { title: "Gestión de usuarios", desc: "Módulo CRUD: agregar usuario con nombre, email, contraseña y rol.", img: "/screenshots/construcare/gestion-usuarios.png" },
+      { title: "Gestión de usuarios — Modificar", desc: "Vista de modificación y eliminación de usuarios existentes con dropdown.", img: "/screenshots/construcare/gestion-usuarios2.png" },
+      { title: "Gestión de usuarios — Lista", desc: "Lista completa de usuarios del sistema con sus roles asignados.", img: "/screenshots/construcare/gestion-usuarios3.png" },
+      { title: "Perfil de usuario", desc: "Vista de perfil con nombre de usuario, rol asignado y opciones de desconexión.", img: "/screenshots/construcare/perfil-usuario.png" }
     ]
   }
 ];
@@ -142,19 +147,38 @@ const skills = {
   "Herramientas": ["Git", "Vite", "Composer", "Vercel", "XAMPP"]
 };
 
-function ScreenshotCard({ shot, color }: { shot: { title: string; desc: string; color: string }; color: string }) {
+type Project = typeof projects[0];
+type Screenshot = Project["screenshots"][0];
+
+function ImageModal({ shot, onClose, color }: { shot: Screenshot; onClose: () => void; color: string }) {
   return (
-    <div className="rounded-xl overflow-hidden border border-gray-200 bg-white shadow-sm hover:shadow-md transition-shadow">
-      <div className="relative" style={{ backgroundColor: shot.color, minHeight: 160 }}>
-        <div className="absolute inset-0 flex flex-col items-center justify-center p-4">
-          <div className="w-10 h-10 rounded-lg bg-white/60 flex items-center justify-center mb-2">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-              <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
-              <line x1="8" y1="21" x2="16" y2="21" />
-              <line x1="12" y1="17" x2="12" y2="21" />
+    <div className="fixed inset-0 z-[60] flex items-center justify-center p-4" style={{ backgroundColor: 'rgba(0,0,0,0.8)' }} onClick={onClose}>
+      <div className="relative max-w-5xl w-full" onClick={e => e.stopPropagation()}>
+        <button onClick={onClose} className="absolute -top-10 right-0 text-white text-2xl hover:opacity-70 transition">×</button>
+        <img src={shot.img} alt={shot.title} className="w-full rounded-xl shadow-2xl" />
+        <div className="mt-3 text-center">
+          <p className="text-white font-semibold">{shot.title}</p>
+          <p className="text-white/60 text-sm mt-1">{shot.desc}</p>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function ScreenshotCard({ shot, color, onClickImage }: { shot: Screenshot; color: string; onClickImage: () => void }) {
+  return (
+    <div className="rounded-xl overflow-hidden border border-gray-200 bg-white shadow-sm hover:shadow-md transition-shadow cursor-pointer" onClick={onClickImage}>
+      <div className="relative overflow-hidden" style={{ minHeight: 160, backgroundColor: '#f3f4f6' }}>
+        <img src={shot.img} alt={shot.title} className="w-full h-44 object-cover object-top" loading="lazy" />
+        <div className="absolute inset-0 bg-black/0 hover:bg-black/10 transition-colors flex items-center justify-center opacity-0 hover:opacity-100">
+          <div className="w-10 h-10 rounded-full bg-white/80 flex items-center justify-center">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <circle cx="11" cy="11" r="8" />
+              <line x1="21" y1="21" x2="16.65" y2="16.65" />
+              <line x1="11" y1="8" x2="11" y2="14" />
+              <line x1="8" y1="11" x2="14" y2="11" />
             </svg>
           </div>
-          <span className="text-xs font-medium text-center" style={{ color: color }}>{shot.title}</span>
         </div>
       </div>
       <div className="p-3">
@@ -165,8 +189,9 @@ function ScreenshotCard({ shot, color }: { shot: { title: string; desc: string; 
   );
 }
 
-function GallerySection({ project }: { project: typeof projects[0] }) {
+function GallerySection({ project }: { project: Project }) {
   const [showAll, setShowAll] = useState(false);
+  const [modalShot, setModalShot] = useState<Screenshot | null>(null);
   const visible = showAll ? project.screenshots : project.screenshots.slice(0, 4);
 
   return (
@@ -177,7 +202,7 @@ function GallerySection({ project }: { project: typeof projects[0] }) {
       </div>
       <div className="grid grid-cols-2 gap-3">
         {visible.map((s, i) => (
-          <ScreenshotCard key={i} shot={s} color={project.color} />
+          <ScreenshotCard key={i} shot={s} color={project.color} onClickImage={() => setModalShot(s)} />
         ))}
       </div>
       {project.screenshots.length > 4 && (
@@ -188,26 +213,20 @@ function GallerySection({ project }: { project: typeof projects[0] }) {
           {showAll ? "Mostrar menos" : `Ver las ${project.screenshots.length - 4} capturas restantes`}
         </button>
       )}
+      {modalShot && <ImageModal shot={modalShot} onClose={() => setModalShot(null)} color={project.color} />}
     </div>
   );
 }
 
-function ProjectCard({ project, onClick }: { project: typeof projects[0]; onClick: () => void }) {
+function ProjectCard({ project, onClick }: { project: Project; onClick: () => void }) {
   return (
     <div onClick={onClick} className="cursor-pointer group">
       <div className="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
         <div className={`h-2 bg-gradient-to-r ${project.gradient}`} />
-        {/* Mini preview of screenshots */}
         <div className="px-4 pt-4 grid grid-cols-3 gap-1.5">
           {project.screenshots.slice(0, 3).map((s, i) => (
-            <div key={i} className="rounded-lg overflow-hidden" style={{ backgroundColor: s.color, height: 48 }}>
-              <div className="w-full h-full flex items-center justify-center">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke={project.color} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" opacity="0.5">
-                  <rect x="2" y="3" width="20" height="14" rx="2" />
-                  <line x1="8" y1="21" x2="16" y2="21" />
-                  <line x1="12" y1="17" x2="12" y2="21" />
-                </svg>
-              </div>
+            <div key={i} className="rounded-lg overflow-hidden bg-gray-100" style={{ height: 56 }}>
+              <img src={s.img} alt={s.title} className="w-full h-full object-cover object-top" loading="lazy" />
             </div>
           ))}
         </div>
@@ -239,7 +258,7 @@ function ProjectCard({ project, onClick }: { project: typeof projects[0]; onClic
   );
 }
 
-function ProjectDetail({ project, onClose }: { project: typeof projects[0]; onClose: () => void }) {
+function ProjectDetail({ project, onClose }: { project: Project; onClose: () => void }) {
   const [tab, setTab] = useState("info");
 
   return (
@@ -253,7 +272,6 @@ function ProjectDetail({ project, onClose }: { project: typeof projects[0]; onCl
           <span className="inline-block mt-2 text-xs font-medium px-3 py-1 rounded-full bg-white/20">{project.category}</span>
         </div>
 
-        {/* Tabs */}
         <div className="border-b border-gray-100 px-7">
           <div className="flex gap-1 -mb-px">
             {[["info", "Información"], ["gallery", `Capturas (${project.screenshots.length})`], ["tech", "Stack"]].map(([k, l]) => (
@@ -325,7 +343,7 @@ function ProjectDetail({ project, onClose }: { project: typeof projects[0]; onCl
 }
 
 export default function Portfolio() {
-  const [selected, setSelected] = useState<typeof projects[0] | null>(null);
+  const [selected, setSelected] = useState<Project | null>(null);
   const [section, setSection] = useState("projects");
 
   useEffect(() => {
@@ -360,10 +378,10 @@ export default function Portfolio() {
             <div className="mb-12">
               <h2 className="text-4xl font-bold text-gray-900 mb-3">Mis Proyectos</h2>
               <p className="text-lg text-gray-500 max-w-2xl">
-                Desarrollo web full stack — desde aplicaciones personales hasta plataformas en producción real para empresas de ingeniería civil. (Faltan las capturas de pantalla de las aplicaciones)
+                Desarrollo web full stack — desde aplicaciones personales hasta plataformas en producción real para empresas de ingeniería civil.
               </p>
               <div className="flex gap-6 mt-6">
-                {[["3", "Proyectos"], ["1", "En producción"], ["15+", "Tecnologías"], ["30+", "Pantallas"]].map(([n, l]) => (
+                {[["3", "Proyectos"], ["1", "En producción"], ["15+", "Tecnologías"], ["37", "Pantallas"]].map(([n, l]) => (
                   <div key={l} className="text-center">
                     <p className="text-3xl font-bold text-gray-900">{n}</p>
                     <p className="text-xs text-gray-400">{l}</p>
@@ -378,7 +396,6 @@ export default function Portfolio() {
               ))}
             </div>
 
-            {/* Timeline */}
             <div className="mt-16">
               <h3 className="text-2xl font-bold text-gray-900 mb-6">Evolución Técnica</h3>
               <div className="relative">
@@ -386,7 +403,7 @@ export default function Portfolio() {
                 {[
                   { color: "#E63946", title: "Love Analytics", desc: "Primera SPA con React 19, TypeScript, y Firebase. Aprendizaje de arquitectura moderna de componentes, tipado estático y BaaS.", tech: "React · TypeScript · Firebase · Vite" },
                   { color: "#2563EB", title: "Gestión de Inclinómetros", desc: "Salto a backend con PHP y PostgreSQL. Diseño de API REST, modelo relacional robusto, visualización científica 3D y control de roles.", tech: "PHP · PostgreSQL · Plotly.js · Leaflet" },
-                  { color: "#0F766E", title: "Monitorización de estructuras", desc: "Plataforma en producción real. Generación de informes (PDF/Excel), internacionalización, configuración dinámica por proyecto y gestión de alarmas.", tech: "PHP · PostgreSQL · Chart.js · FPDF · PhpSpreadsheet" }
+                  { color: "#0F766E", title: "Constru-Care", desc: "Plataforma en producción real. Generación de informes (PDF/Excel), internacionalización, configuración dinámica por proyecto y gestión de alarmas.", tech: "PHP · PostgreSQL · Chart.js · FPDF · PhpSpreadsheet" }
                 ].map((item, i) => (
                   <div key={i} className="relative pl-12 pb-8">
                     <div className="absolute left-2.5 w-3.5 h-3.5 rounded-full border-2 bg-white" style={{ borderColor: item.color }} />
