@@ -373,8 +373,8 @@ export default function Portfolio() {
             </div>
 
             <div className="grid md:grid-cols-3 gap-6">
-              {projects.map((p, i) => (
-                <ProjectCard key={p.id} project={p} idx={i} onClick={() => setSelected(p)} />
+              {projects.map((p) => (
+                <ProjectCard key={p.id} project={p} onClick={() => setSelected(p)} />
               ))}
             </div>
 
