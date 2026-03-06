@@ -142,7 +142,7 @@ const skills = {
   "Herramientas": ["Git", "Vite", "Composer", "Vercel", "XAMPP"]
 };
 
-function ScreenshotCard({ shot, color, idx }) {
+function ScreenshotCard({ shot, color, idx }: { shot: { title: string; desc: string; color: string }; color: string; idx: number }) {
   return (
     <div className="rounded-xl overflow-hidden border border-gray-200 bg-white shadow-sm hover:shadow-md transition-shadow">
       <div className="relative" style={{ backgroundColor: shot.color, minHeight: 160 }}>
@@ -165,7 +165,7 @@ function ScreenshotCard({ shot, color, idx }) {
   );
 }
 
-function GallerySection({ project }) {
+function GallerySection({ project }: { project: typeof projects[0] }) {
   const [showAll, setShowAll] = useState(false);
   const visible = showAll ? project.screenshots : project.screenshots.slice(0, 4);
 
@@ -192,7 +192,7 @@ function GallerySection({ project }) {
   );
 }
 
-function ProjectCard({ project, onClick, idx }) {
+function ProjectCard({ project, onClick, idx }: { project: typeof projects[0]; onClick: () => void; idx: number }) {
   return (
     <div onClick={onClick} className="cursor-pointer group">
       <div className="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
@@ -239,7 +239,7 @@ function ProjectCard({ project, onClick, idx }) {
   );
 }
 
-function ProjectDetail({ project, onClose }) {
+function ProjectDetail({ project, onClose }: { project: typeof projects[0]; onClose: () => void }) {
   const [tab, setTab] = useState("info");
 
   return (
@@ -469,4 +469,3 @@ export default function Portfolio() {
     </div>
   );
 }
-
