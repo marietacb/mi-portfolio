@@ -150,7 +150,7 @@ const skills = {
 type Project = typeof projects[0];
 type Screenshot = Project["screenshots"][0];
 
-function ImageModal({ shot, onClose, color }: { shot: Screenshot; onClose: () => void; color: string }) {
+function ImageModal({ shot, onClose }: { shot: Screenshot; onClose: () => void }) {
   return (
     <div className="fixed inset-0 z-[60] flex items-center justify-center p-4" style={{ backgroundColor: 'rgba(0,0,0,0.8)' }} onClick={onClose}>
       <div className="relative max-w-5xl w-full" onClick={e => e.stopPropagation()}>
@@ -213,7 +213,7 @@ function GallerySection({ project }: { project: Project }) {
           {showAll ? "Mostrar menos" : `Ver las ${project.screenshots.length - 4} capturas restantes`}
         </button>
       )}
-      {modalShot && <ImageModal shot={modalShot} onClose={() => setModalShot(null)} color={project.color} />}
+      {modalShot && <ImageModal shot={modalShot} onClose={() => setModalShot(null)} />}
     </div>
   );
 }
